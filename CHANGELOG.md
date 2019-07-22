@@ -1,38 +1,40 @@
 # Change Log
 
 ## [1.0.1](https://github.com/leapfrogtechnology/async-store/tree/1.0.1) (2019-07-19)
+
 [Full Changelog](https://github.com/leapfrogtechnology/async-store/compare/1.0.0...1.0.1)
 
 **Changes**
 
 - Update example to use correct store [\#11](https://github.com/leapfrogtechnology/async-store/pull/11) ([mesaugat](https://github.com/mesaugat))
-- Add GitHub URL and update description in package.json [\#10](https://github.com/leapfrogtechnology/async-store/pull/10) [[documentation](https://github.com/leapfrogtechnology/async-store/labels/documentation)] ([mesaugat](https://github.com/mesaugat))
+- Add GitHub URL and update description in package.json [\#10](https://github.com/leapfrogtechnology/async-store/pull/10) [[documentation](https://github.com/leapfrogtechnology/async-store/labels/documentation)](<[mesaugat](https://github.com/mesaugat)>)
 
 ## [1.0.0](https://github.com/leapfrogtechnology/async-store/tree/1.0.0) (2019-07-19)
+
 [Full Changelog](https://github.com/leapfrogtechnology/async-store/compare/1.0.0-beta.1...1.0.0)
 
 **Changes**
 
-- Add a sample project using Express and TypeScript [\#9](https://github.com/leapfrogtechnology/async-store/pull/9) [[example](https://github.com/leapfrogtechnology/async-store/labels/example)] ([kabirbaidhya](https://github.com/kabirbaidhya))
-- Update docs in README.md [\#8](https://github.com/leapfrogtechnology/async-store/pull/8) [[documentation](https://github.com/leapfrogtechnology/async-store/labels/documentation)] ([cham11ng](https://github.com/cham11ng))
+- Add a sample project using Express and TypeScript [\#9](https://github.com/leapfrogtechnology/async-store/pull/9) [[example](https://github.com/leapfrogtechnology/async-store/labels/example)](<[kabirbaidhya](https://github.com/kabirbaidhya)>)
+- Update docs in README.md [\#8](https://github.com/leapfrogtechnology/async-store/pull/8) [[documentation](https://github.com/leapfrogtechnology/async-store/labels/documentation)](<[cham11ng](https://github.com/cham11ng)>)
 - Cleanup and update dependencies [\#7](https://github.com/leapfrogtechnology/async-store/pull/7) ([kabirbaidhya](https://github.com/kabirbaidhya))
 
 ## [1.0.0-beta.1](https://github.com/leapfrogtechnology/async-store/tree/1.0.0-beta.1) (2019-07-05)
+
 [Full Changelog](https://github.com/leapfrogtechnology/async-store/compare/1.0.0-alpha.1...1.0.0-beta.1)
 
 **Changes**
 
-- Refactor domain implementation and add find\(\) function [\#6](https://github.com/leapfrogtechnology/async-store/pull/6) [[refactor](https://github.com/leapfrogtechnology/async-store/labels/refactor)] ([cham11ng](https://github.com/cham11ng))
-- Upgrade packages using vulnerable js-yaml package as a dependency [\#5](https://github.com/leapfrogtechnology/async-store/pull/5) [[security](https://github.com/leapfrogtechnology/async-store/labels/security)] ([mesaugat](https://github.com/mesaugat))
+- Refactor domain implementation and add find\(\) function [\#6](https://github.com/leapfrogtechnology/async-store/pull/6) [[refactor](https://github.com/leapfrogtechnology/async-store/labels/refactor)](<[cham11ng](https://github.com/cham11ng)>)
+- Upgrade packages using vulnerable js-yaml package as a dependency [\#5](https://github.com/leapfrogtechnology/async-store/pull/5) [[security](https://github.com/leapfrogtechnology/async-store/labels/security)](<[mesaugat](https://github.com/mesaugat)>)
 
 ## [1.0.0-alpha.1](https://github.com/leapfrogtechnology/async-store/tree/1.0.0-alpha.1) (2019-04-18)
+
 **Changes**
 
-- Add scripts to generate changelog and release [\#4](https://github.com/leapfrogtechnology/async-store/pull/4) [[script](https://github.com/leapfrogtechnology/async-store/labels/script)] ([kabirbaidhya](https://github.com/kabirbaidhya))
-- Configure Travis CI for running tests [\#3](https://github.com/leapfrogtechnology/async-store/pull/3) [[test](https://github.com/leapfrogtechnology/async-store/labels/test)] ([kabirbaidhya](https://github.com/kabirbaidhya))
-- Add MIT License  [\#2](https://github.com/leapfrogtechnology/async-store/pull/2) [[documentation](https://github.com/leapfrogtechnology/async-store/labels/documentation)] ([kabirbaidhya](https://github.com/kabirbaidhya))
+- Add scripts to generate changelog and release [\#4](https://github.com/leapfrogtechnology/async-store/pull/4) [[script](https://github.com/leapfrogtechnology/async-store/labels/script)](<[kabirbaidhya](https://github.com/kabirbaidhya)>)
+- Configure Travis CI for running tests [\#3](https://github.com/leapfrogtechnology/async-store/pull/3) [[test](https://github.com/leapfrogtechnology/async-store/labels/test)](<[kabirbaidhya](https://github.com/kabirbaidhya)>)
+- Add MIT License [\#2](https://github.com/leapfrogtechnology/async-store/pull/2) [[documentation](https://github.com/leapfrogtechnology/async-store/labels/documentation)](<[kabirbaidhya](https://github.com/kabirbaidhya)>)
 - Add initial source code [\#1](https://github.com/leapfrogtechnology/async-store/pull/1) ([kabirbaidhya](https://github.com/kabirbaidhya))
 
-
-
-\* *This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)*
+\* _This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)_

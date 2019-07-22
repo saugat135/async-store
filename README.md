@@ -26,25 +26,25 @@ yarn add @leapfrogtechnology/async-store
 ### JavaScript Example
 
 ```js
-const store = require('@leapfrogtechnology/async-store');
+const store = require("@leapfrogtechnology/async-store");
 
 store.initialize()(callback);
 
 function callback() {
-  store.set({ foo: 'Hello', bar: 'World' });
+  store.set({ foo: "Hello", bar: "World" });
 
   Promise.resolve()
     .then(() => {
-      console.log('Value of foo: ', store.get('foo'));
+      console.log("Value of foo: ", store.get("foo"));
     })
     .then(() => {
-      console.log('Value of bar: ', store.get('bar'));
+      console.log("Value of bar: ", store.get("bar"));
     })
     .then(() => {
-      console.log('Value of foo: ', store.get('foo'));
+      console.log("Value of foo: ", store.get("foo"));
     })
     .then(() => {
-      console.log('Value of bar: ', store.get('bar'));
+      console.log("Value of bar: ", store.get("bar"));
     });
 }
 ```
@@ -52,25 +52,25 @@ function callback() {
 ### TypeScript Example
 
 ```js
-import * as store from '@leapfrogtechnology/async-store';
+import * as store from "@leapfrogtechnology/async-store";
 
 store.initialize()(callback);
 
 function callback() {
-  store.set({ foo: 'Hello', bar: 'World' });
+  store.set({ foo: "Hello", bar: "World" });
 
   Promise.resolve()
     .then(() => {
-      console.log('Value of foo: ', store.get('foo'));
+      console.log("Value of foo: ", store.get("foo"));
     })
     .then(() => {
-      console.log('Value of bar: ', store.get('bar'));
+      console.log("Value of bar: ", store.get("bar"));
     })
     .then(() => {
-      console.log('Value of foo: ', store.get('foo'));
+      console.log("Value of foo: ", store.get("foo"));
     })
     .then(() => {
-      console.log('Value of bar: ', store.get('bar'));
+      console.log("Value of bar: ", store.get("bar"));
     });
 }
 ```
@@ -78,9 +78,9 @@ function callback() {
 ### Express Example
 
 ```js
-const uuid = require('uuid');
-const express = require('express');
-const store = require('@leapfrogtechnology/async-store');
+const uuid = require("uuid");
+const express = require("express");
+const store = require("@leapfrogtechnology/async-store");
 
 const app = express();
 const port = 3000;
@@ -94,11 +94,11 @@ app.use((req, res, next) => {
 });
 
 // Get request Id from store
-app.get('/', (req, res) => {
-  const reqId = store.get('reqId');
+app.get("/", (req, res) => {
+  const reqId = store.get("reqId");
   console.log(`Request Id: ${reqId}`);
 
-  res.json({ message: 'Hello World' });
+  res.json({ message: "Hello World" });
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
@@ -114,16 +114,16 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 Initialize the async store based on the adapter provided.
 
- - `@param {AsyncStoreAdapter} [adapter=AsyncStoreAdapter.DOMAIN]` - Async store adapter to use.
- - `@returns {(params: AsyncStoreParams) => void}` - Returns a function that takes a callback which will be triggered once the store has been initialized.
+- `@param {AsyncStoreAdapter} [adapter=AsyncStoreAdapter.DOMAIN]` - Async store adapter to use.
+- `@returns {(params: AsyncStoreParams) => void}` - Returns a function that takes a callback which will be triggered once the store has been initialized.
 
 ```js
-const store = require('@leapfrogtechnology/async-store');
+const store = require("@leapfrogtechnology/async-store");
 
 store.initialize()(callback);
 
 function callback() {
-  // Do something with the store. 
+  // Do something with the store.
 }
 ```
 
@@ -135,8 +135,8 @@ Middleware to initialize the async store and make it accessible from all the sub
 - `@returns {(req, res, next) => void}` - Returns the express middleware function.
 
 ```js
-const express = require('express');
-const store = require('@leapfrogtechnology/async-store');
+const express = require("express");
+const store = require("@leapfrogtechnology/async-store");
 
 // Initialize async store
 app.use(store.initializeMiddleware());
@@ -150,29 +150,29 @@ Persists properties in the store.
 - `@returns {void}`
 
 ```js
-store.set({ foo: 'Hello', bar: 'World' });
+store.set({ foo: "Hello", bar: "World" });
 ```
 
 ### get()
 
 Gets a value by a key from the store.
 
-- `@params {string} key` -  Key to get from the store. 
+- `@params {string} key` - Key to get from the store.
 - `@returns {any}` - Returns the value persisted in the store by `key` which could be `null` if key not found. Any error caught during the retrieval will be thrown and cascaded.
 
 ```js
-const foo = store.get('foo');
+const foo = store.get("foo");
 ```
 
 ### find()
 
 Gets a value by a key from the store. If anything fails, it returns `null` without emitting error event.
 
-- `@params {string} key` - Key to get from the store. 
+- `@params {string} key` - Key to get from the store.
 - `@returns {any}` - Returns the value persisted in the store by `key` which could be `null` if key not found. Any error caught during the retrieval will be supressed and `null` value is returned.
 
 ```js
-const foo = store.find('foo');
+const foo = store.find("foo");
 ```
 
 ## Changelog
