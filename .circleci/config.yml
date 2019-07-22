@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: leapfrogtechnology/envault:0.4.6-node10.16.0-stretch-slim
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
